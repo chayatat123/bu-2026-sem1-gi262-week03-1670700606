@@ -1,21 +1,30 @@
-using UnityEngine;
+// ==============================================================================
+// 1. LECTURE EXERCISES (5 FILES)
+// Path: Assets/Scripts/Workspace/Assignment/StudentSolution/
+// ==============================================================================
 
+// ------------------------------------------------------------------------------
+// FILE: LCT01SyntaxClass.cs
+// ------------------------------------------------------------------------------
+using UnityEngine;
 
 namespace Assignment.StudentSolution.LCT01
 {
     public class Car
     {
-        public string Name; 
-        public float Speed;
-        public string Color;
         public void Move()
         {
             Debug.Log("Car is moving");
-            
         }
+
         public void Turn()
         {
             Debug.Log("Car is turning");
+        }
+
+        public void Honk()
+        {
+            Debug.Log("Car is honking");
         }
     }
 
@@ -23,18 +32,10 @@ namespace Assignment.StudentSolution.LCT01
     {
         public void Start()
         {
-            // Student code start HERE ...
-            Car car1 = new Car();
-            car1.Name = "Lamborghini";
-            Debug.Log( car1.Name);
-            car1.Move();
-            car1.Turn();
-
-            Car car2 = new Car();
-            car2.Name = "Toyota";
-            Debug.Log( car2.Name);
-            // Student code ends HERE 
+            Car car = new Car();
+            car.Move();
+            car.Turn();
+            car.Honk();
         }
-       
     }
 }
